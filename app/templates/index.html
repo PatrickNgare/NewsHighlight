@@ -1,0 +1,45 @@
+{% extends 'base.html' %} 
+{% import 'macros.html' as macro %}
+ {% block content %}
+<ul>
+<h3>Genaral news</h3>
+{{macro.displaySourceList(general)}}
+
+</ul>
+
+
+
+ <ul>
+    <h3>Business new</h3>
+    {{macro.displaySourceList(business)}}
+    </ul>
+    <ul>
+        <h3>Technology news</h3>
+        {{macro.displaySourceList(technology)}} 
+  </ul>    
+
+  <ul>
+    <h3><Sport news /h3>
+    {{macro.displaySourceList(sports)}}
+    </ul>
+
+    
+    
+    <ul>
+        <h3>Health News</h3>
+        {{macro.displaySourceList(health)}}
+        </ul>
+
+     <ul>
+            <h3>Science News</h3>
+            {{macro.displaySourceList(science)}}
+            </ul>   
+            
+            <ul>
+                <h3>Entertainment news </h3>
+                {{macro.displaySourceList(entertainment)}}
+                </ul>     
+{% endblock %} 
+
+
+
