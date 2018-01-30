@@ -5,9 +5,10 @@
 
  {% block styles%}
     {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 {% endblock %}
-<div class="container-fluid">
+
+<div class="container font-family: 'EB Garamond', serif;">
 <div class="row">
 <div class="col">
 
@@ -17,23 +18,25 @@
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/Rvjg0cQq39AjK" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/website-affairs-website1-Rvjg0cQq39AjK">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(sports)}}</a>
 </div>
 </div>
-
-
+</div>
+<div class="col">
 <div class="card">
 <div class="card-header deep-orange lighten-1 white-text">
  <p>Top Business News</p>
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/w0sIdL0uWs0uY" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/howard-w0sIdL0uWs0uY">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(business)}}</a>
 </div>
 </div>
-</div></div>
+</div>
 <div class="row">
         <div class="col">
 
@@ -44,12 +47,14 @@
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/JpIgO1LLtiuJ2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tech-news-instagram-JpIgO1LLtiuJ2">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(technology)}}</a>
 </div>
 </div>              
                 
-
+        </div>
+        <div class="col">
 
 <div class="card">
  <div class="card-header deep-orange lighten-1 white-text">
@@ -57,6 +62,7 @@
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/3o7TKnoepJ80Pyfru8" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/signwithrobert-sign-with-robert-3o7TKnoepJ80Pyfru8">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(health)}}</a>
 </div>
@@ -64,20 +70,21 @@
 
 </div>
 
-</div>
 <div class="row">
-                <div class="col">                   
+  <div class="col">                   
 <div class="card">
 <div class="card-header deep-orange lighten-1 white-text">
 <p>Top Science News</p>
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/EaehInA0MgXxm" width="480" height="253" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-spacex-EaehInA0MgXxm">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(science)}}</a>
 </div>
 </div>   
-
+  </div>
+  <div class="col">                   
 
 <div class="card">
 <div class="card-header deep-orange lighten-1 white-text">
@@ -85,11 +92,14 @@
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/l49JIJalWm3DK469q" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sagawards-sag-awards-2018-l49JIJalWm3DK469q">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(entertainment)}}</a>
 </div>
 </div>   
-
+  </div>
+  <div class="row">
+  <div class="col">                   
 
 
 <div class="card">
@@ -98,14 +108,14 @@
 </div>
 <div class="card-body">
 <h4 class="card-title"></h4>
+<iframe src="https://giphy.com/embed/4R2FjPq9RLRio" width="480" height="410" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/joan-jett-and-the-blackhearts-bad-reputation-4R2FjPq9RLRio">via GIPHY</a></p>
 <p class="card-text">Select the news source you prefer</p>
 <a class="btn btn-deep-orange">{{macro.displaySourceList(general)}}</a>
 </div>
-</div>   
-                
-</div>   
-    
-</div>                       
+</div>    
+</div>
+</div> 
+
 {% endblock %} 
 
 
