@@ -1,7 +1,7 @@
 
 class Source:
     """
-    Source class to define news source object
+    Blueprint for my Sourcece class
     """
 
     def __init__(self, id, name, description, url, category, country):
