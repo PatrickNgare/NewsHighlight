@@ -1,44 +1,111 @@
 {% extends 'base.html' %} 
 {% import 'macros.html' as macro %}
  {% block content %}
-<ul>
-<h3>Genaral news</h3>
-{{macro.displaySourceList(general)}}
-
-</ul>
 
 
+ {% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<div class="container-fluid">
+<div class="row">
+<div class="col">
 
- <ul>
-    <h3>Business new</h3>
-    {{macro.displaySourceList(business)}}
-    </ul>
-    <ul>
-        <h3>Technology news</h3>
-        {{macro.displaySourceList(technology)}} 
-  </ul>    
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+<p> Top Sport News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(sports)}}</a>
+</div>
+</div>
 
-  <ul>
-    <h3><Sport news /h3>
-    {{macro.displaySourceList(sports)}}
-    </ul>
 
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+ <p>Top Business News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(business)}}</a>
+</div>
+</div>
+</div></div>
+<div class="row">
+        <div class="col">
+
+        
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+<p>Top Technology News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(technology)}}</a>
+</div>
+</div>              
+                
+
+
+<div class="card">
+ <div class="card-header deep-orange lighten-1 white-text">
+<p> Top Health News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(health)}}</a>
+</div>
+</div>       
+
+</div>
+
+</div>
+<div class="row">
+                <div class="col">                   
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+<p>Top Science News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(science)}}</a>
+</div>
+</div>   
+
+
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+<p> Top Entertainment News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(entertainment)}}</a>
+</div>
+</div>   
+
+
+
+<div class="card">
+<div class="card-header deep-orange lighten-1 white-text">
+<p> Top Genaral News</p>
+</div>
+<div class="card-body">
+<h4 class="card-title"></h4>
+<p class="card-text">Select the news source you prefer</p>
+<a class="btn btn-deep-orange">{{macro.displaySourceList(general)}}</a>
+</div>
+</div>   
+                
+</div>   
     
-    
-    <ul>
-        <h3>Health News</h3>
-        {{macro.displaySourceList(health)}}
-        </ul>
-
-     <ul>
-            <h3>Science News</h3>
-            {{macro.displaySourceList(science)}}
-            </ul>   
-            
-            <ul>
-                <h3>Entertainment news </h3>
-                {{macro.displaySourceList(entertainment)}}
-                </ul>     
+</div>                       
 {% endblock %} 
 
 
