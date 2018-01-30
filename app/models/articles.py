@@ -1,17 +1,9 @@
 class Articles:
     """
-    Defines what we want our articles object to look like
+   Blueprint for my articles 
     """
 
-    def __init__(self,
-                 id,
-                 name,
-                 author,
-                 title,
-                 description,
-                 url,
-                 urlToImage,
-                 publishedAt):
+    def __init__(self, id,name,author,title,description,url,urlToImage,publishedAt):
         self.id = id
         self.name = name
         self.author = author
